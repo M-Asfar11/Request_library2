@@ -41,7 +41,7 @@ df = pd.json_normalize(data)
 # df = pd.DataFrame(data)
 # print(df)
 print(df)
-timestamp = datetime.now().strftime("%Y-%m-%d_%H-%M")
+timestamp = datetime.now().strftime("%d-%m-%Y")
 filename = f"weather_report_{timestamp}.csv"
 # df.to_csv("weather_data_listed_cities.csv")
 df.to_csv(filename, index=False)
